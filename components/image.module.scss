@@ -1,0 +1,6 @@
+
+%view { position: fixed;  left: 0;  top: 0;  width: 100%;  height: 100%;  background: black;  z-index: 3 }
+
+.show { @extend %view;  visibility: visible;  opacity: 1;  transition: opacity 0.5s linear }
+
+.hide { @extend %view;  visibility: hidden;  opacity: 0;  transition: opacity 0.5s linear, visibility 0s linear 0.5s }

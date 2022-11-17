@@ -1,0 +1,52 @@
+
+@import 'highcharts/css/highcharts.css';
+
+$back: #444;  $text: #eee;
+
+.sun  { display: none;   width: 26px;  height: 26px;  fill: none;  stroke-width: 2;  stroke: $text;  cursor: pointer }
+.moon { display: block;  width: 24px;  height: 24px;  fill: none;  stroke-width: 2;  stroke: $back;  cursor: pointer }
+
+.dark {
+	.main { background: $back;  color: $text }
+	hr { border: 1px solid $back;  border-bottom: 1px dashed $text }
+
+	.sun { display: block }
+	.moon { display: none }
+
+	.highcharts {
+		&-background { fill: $back }
+		&-title { fill: $text }
+		&-subtitle { fill: $text }
+		&-grid-line { stroke: #555 }
+		&-axis-line { stroke: #aaa }
+		&-axis-title { fill: $text }
+		&-axis-labels { fill: $text }
+	}
+}
+
+* { margin: 0 }
+::-webkit-scrollbar { width: 0 }
+
+body { text-align: center;  background: fixed url('http://asuprog.ru/img/bg.jpg') }
+
+.main { display: inline-block;  width: 920px;  background: white }
+
+h1 { padding: 15px 0;  color: white;  margin: 50px 0 20px;
+	background: #0c6;  font: 32px arial
+}
+
+h2 { padding: 15px 0;  color: white;  margin: 20px 0;
+	background: blue;  font: 20px arial;  text-align: left;  text-indent: 5%
+}
+
+h3 { display: inline-block;  width: 90%;  font: 16px arial;
+	padding: 15px 0;  text-align: left;  font-weight: bold
+}
+
+p { display: inline-block;  width: 90%;  font: 16px arial;
+	padding: 10px 0;  text-align: justify;  text-indent: 30px
+}
+
+hr { display: inline-block;  width: 90%;  margin: 10px 0;
+	border: 1px solid white;  border-bottom: 1px dashed #aaa
+}
